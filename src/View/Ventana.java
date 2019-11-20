@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 public class Ventana extends JFrame {
     private JLabel lblTitle;
     private JLabel lblDescription;
+    private JLabel lblautores;
     private JButton btnInit;
     private JButton btnExit;
     private Environment clips;
@@ -52,7 +53,11 @@ public class Ventana extends JFrame {
         btnExit.setBounds(this.getWidth()/4, 150, 120, 30);
         btnExit.addActionListener(e -> System.exit(0));
         this.add(btnExit);
-
+        //autores 
+        lblautores = new JLabel("<html>Integrantes: Wilson Aguilar, Gabriel Cacuango,             Christian Lasso , Laverde Pablo .</html>");
+        lblautores.setBounds(10, 175 , this.getWidth(), 50);
+        lblautores.setFont(new Font("TimesRoman", Font.PLAIN, 12));
+        this.add(lblautores);
     }
 
     private void initClips(String clipsFile){
