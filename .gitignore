@@ -23,5 +23,5 @@
 hs_err_pid*
 
 # carpetas de intellij idea
-out/
-idea/
+.out
+.idea
